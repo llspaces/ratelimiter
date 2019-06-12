@@ -16,5 +16,4 @@ local ttl = redis.call('TTL',key);
 if ttl < 0 then
     redis.call('EXPIRE',key,expire);
 end
-
 return 1;

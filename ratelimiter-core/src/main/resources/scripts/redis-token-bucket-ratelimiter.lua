@@ -12,7 +12,7 @@ if hasKey == 1 and lastClearTime then
     local diff = tonumber(nowTime) - tonumber(lastClearTime);
     local value = tonumber(redis.call('GET', key));
     if  diff >= interval then
-            local maxValue = value + math.floor(diff/interval) * step;
+            local maxValue = value + math.floor(diff / interval) * step;
             if maxValue > limit then
                 value = limit;
             else

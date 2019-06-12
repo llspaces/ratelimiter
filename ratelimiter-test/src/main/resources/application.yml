@@ -3,8 +3,6 @@ server:
 
 spring:
   redis:
-    #cluster: 集群模式启用
-      #nodes: 10.0.20.135:7010,10.0.20.135:7011,10.0.20.135:7012
     host: 192.168.4.131
     port: 6379
     password: WzQ9oWgx

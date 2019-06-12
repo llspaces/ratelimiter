@@ -5,7 +5,7 @@ package com.llspace.ratelimiter.utils;
  * <p>
  * <p>@description 限流类型</p>
  *
- * @author liyupeng
+ * @author llspace
  * @version 1.0
  * @since 2019/6/4 16:57
  **/

@@ -6,6 +6,7 @@ E:\IdeaProjects2019\ratelimiter\ratelimiter-core\src\main\java\com\llspace\ratel
 E:\IdeaProjects2019\ratelimiter\ratelimiter-core\src\main\java\com\llspace\ratelimiter\annotation\MethodRateLimiter.java
 E:\IdeaProjects2019\ratelimiter\ratelimiter-core\src\main\java\com\llspace\ratelimiter\aspect\MethodRateLimiterAspect.java
 E:\IdeaProjects2019\ratelimiter\ratelimiter-core\src\main\java\com\llspace\ratelimiter\utils\RateLimitAlgorithm.java
+E:\IdeaProjects2019\ratelimiter\ratelimiter-core\src\main\java\com\llspace\ratelimiter\GuavaRateLimiter.java
 E:\IdeaProjects2019\ratelimiter\ratelimiter-core\src\main\java\com\llspace\ratelimiter\utils\RateLimiterUtil.java
 E:\IdeaProjects2019\ratelimiter\ratelimiter-core\src\main\java\com\llspace\ratelimiter\RateLimiter.java
 E:\IdeaProjects2019\ratelimiter\ratelimiter-core\src\main\java\com\llspace\ratelimiter\RedisCounterRateLimiter.java

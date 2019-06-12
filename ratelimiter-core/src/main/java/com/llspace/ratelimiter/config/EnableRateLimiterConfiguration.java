@@ -23,7 +23,7 @@ import org.springframework.stereotype.Component;
  * <p>
  * <p>@description ratelimiter项目配置类(支持spring项目配置管理)</p>
  *
- * @author liyupeng
+ * @author llspace
  * @version 1.0
  * @since 2019/6/4 11:40
  **/

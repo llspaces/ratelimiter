@@ -17,7 +17,7 @@ import org.springframework.stereotype.Component;
  * <p>
  * <p>@description MethodRateLimiter注解切面类</p>
  *
- * @author liyupeng
+ * @author llspace
  * @version 1.0
  * @since 2019/6/4 17:01
  **/
@@ -34,6 +34,7 @@ public class MethodRateLimiterAspect {
     @Before("@annotation(methodRateLimiter)")
     public void doBefore(JoinPoint joinPoint, MethodRateLimiter methodRateLimiter) {
         String key = RateLimiterUtil.getKey(methodRateLimiter.algorithm().getName(), joinPoint,methodRateLimiter.type());
-        RateLimiterFactory.getRateLimiter(methodRateLimiter.algorithm().getName()).rateLimit(key,methodRateLimiter.limit(),methodRateLimiter.refreshInterval(),methodRateLimiter.tokenBucketTimeInterval(), methodRateLimiter.tokenNumber());
+        RateLimiterFactory.getRateLimiter(methodRateLimiter.algorithm().getName()).rateLimit(key,methodRateLimiter.limit(),
+            methodRateLimiter.refreshInterval(),methodRateLimiter.tokenBucketTimeInterval(), methodRateLimiter.tokenNumber());
     }
 }

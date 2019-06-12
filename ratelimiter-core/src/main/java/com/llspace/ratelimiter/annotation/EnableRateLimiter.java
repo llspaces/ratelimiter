@@ -10,7 +10,7 @@ import java.lang.annotation.*;
  * <p>
  * <p>@description 开启限流功能注解</p>
  *
- * @author liyupeng
+ * @author llspace
  * @version 1.0
  * @since 2019/6/4 11:43
  **/

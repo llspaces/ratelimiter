@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
  * <p>
  * <p>@description TODO</p>
  *
- * @author liyupeng
+ * @author llspace
  * @version 1.0
  * @since 2019/6/4 18:46
  **/
@@ -41,6 +41,12 @@ public class TestController {
     @MethodRateLimiter(tokenBucketTimeInterval = 10, tokenNumber = 3, algorithm = RateLimitAlgorithm.REDIS_TOKEN_BUCKET)
     public String testMethodRedisTokenBucket(){
         return "testMethodRedisTokenBucket";
+    }
+
+    @RequestMapping("/testMethodGuava")
+    @MethodRateLimiter(algorithm = RateLimitAlgorithm.GUAVA, tokenNumber = 3)
+    public String testMethodGuava(){
+        return "testMethodGuava";
     }
 
 }
